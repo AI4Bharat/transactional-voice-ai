@@ -1,0 +1,11 @@
+asr:
+  model_path:
+    en: asr/models/conformer-en.nemo
+    hi: asr/models/conformer-hi.nemo
+  hotword_mode: entities-unique
+  hotword_weight: 10.0
+
+intent:
+  model_path: intent/models/current-live/checkpoint-1500
+  label_dict_path: intent/models/current-live/labels-dict.pkl
+  confidence_threshold: 0.85
