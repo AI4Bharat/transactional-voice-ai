@@ -27,10 +27,6 @@ prediction_pipeline = PredictionPipeline()
 language_mapping = {"en": "English", "hi": "Hindi"}
 
 
-def encode_audio(audio_content):
-    return base64.b64encode(audio_content).decode("utf-8")
-
-
 def upload_audio(fpath):
     default_credential = DefaultAzureCredential()
 
@@ -88,6 +84,7 @@ def transcribe():
         audio_data = requests.get(audio_uri).content
     else:
         audio_data = input_json["audio"][0].get("audioContent")
+        audio_data = base64.b64decode(audio_data)
 
     if not input_json["config"].get("hotwords"):
         hotword_list = list()
