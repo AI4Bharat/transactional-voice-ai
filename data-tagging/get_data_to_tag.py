@@ -3,7 +3,7 @@ from datetime import datetime
 
 import pandas as pd
 
-DB_READ_PATH = "../db/data/logger.tsv"
+DB_READ_PATH = "../db/logger.tsv"
 URL_BASE = "https://classlm.blob.core.windows.net/backend-logs/{}.wav"
 
 parser = argparse.ArgumentParser()
@@ -27,7 +27,7 @@ def convert_to_data_format(df):
     max_len = max(map(len, data))
     for d in data:
         d.extend([""] * (max_len - len(d)))
-    column_names = ["URL", "Intent", "Date"]
+    column_names = ["URL", "Date", "Intent"]
     column_names.extend(["Entity Type", "Entity Value"] * ((max_len - 2) // 2))
     data_df = pd.DataFrame(data, columns=column_names)
     return data_df
@@ -41,7 +41,7 @@ end_date = datetime.strptime(args.end_date, "%d-%m-%Y")
 
 db_df = db_df[db_df["date"].apply(lambda x: start_date <= x <= end_date)]
 db_df = db_df.dropna()
-db_df = db_df.drop_duplicates(subset=["lang", "whisper_pred"])
+db_df = db_df.drop_duplicates(subset=["lang", "transcript"])
 
 db_df_en = db_df[db_df["lang"] == "English"]
 db_df_hi = db_df[db_df["lang"] == "Hindi"]
