@@ -7,7 +7,7 @@ ENTITY_PATTERN_PATH = "entity/data/patterns.yaml"
 
 
 def intersection_check(start1, end1, start2, end2):
-    if start1 <= start2 <= end1 or start1 <= end2 <= end1:
+    if start1 <= start2 <= end1 or start1 <= end2 <= end1 or start2 <= start1 <= end2 or start2 <= end1 <= end2:
         return True
     else:
         return False
@@ -44,6 +44,7 @@ class EntityRecognizer:
         for ent_type in self.variations_dict:
             for ent_val, ent_variations in self.variations_dict[ent_type].items():
                 for variation in ent_variations:
+                    variation = variation.replace(" ", "")
                     variation_pattern = r"\b{}\b".format("\s*".join(list(variation)))
                     match = list(re.finditer(variation_pattern, sentence))
                     if not match:
@@ -101,6 +102,7 @@ class EntityRecognizer:
         ]
         for ss in remove_rupees_substring:
             ent_val = ent_val.replace(ss, "")
+        ent_val = ent_val.replace(" ", "")
         ent_val = ent_val.strip()
         return ent_val
 
