@@ -1,5 +1,6 @@
 import yaml
 
+import checks
 from asr import hotword_utils
 from asr.conformer import ConformerRecognizer
 from entity.entity_recognizer import EntityRecognizer
@@ -10,6 +11,14 @@ class PredictionPipeline:
     def __init__(self):
         with open("config.yaml") as f:
             self.config = yaml.load(f, yaml.BaseLoader)
+        if not checks.check_intent():
+            raise ValueError(
+                "Unsupported intents found. Compare config and supported labels"
+            )
+        if not checks.check_entity():
+            raise ValueError(
+                "Unsupported entities found. Compare config and supported entities"
+            )
 
         self.asr_mode = self.config["asr"]["hotword_mode"]
         if self.asr_mode == "none":

@@ -9,3 +9,38 @@ intent:
   model_path: intent/models/current-live/checkpoint-1500
   label_dict_path: intent/models/current-live/labels-dict.pkl
   confidence_threshold: 0.85
+  supported_intents:
+  - balance_check
+  - cancel
+  - confirm
+  - electricity_payment
+  - emi_collection_full
+  - emi_collection_partial
+  - fastag_recharge
+  - gas_payment
+  - inform
+  - insurance_renewal
+  - mobile_recharge_postpaid
+  - mobile_recharge_prepaid
+  - p2p_transfer
+  - petrol_payment
+  - upi_creation
+
+entities:
+  variation_path: 
+    en: entity/data/variations/variations-en.yaml
+    hi: entity/data/variations/variations-hi.yaml
+  pattern_path: entity/data/patterns.yaml
+  supported_entities:
+  - bank_name
+  - state_name
+  - electricity_board
+  - pipe_gas_provider_name
+  - vehicle_number
+  - mobile_number
+  - amount_of_money
+  - lpg_gas_provider_name
+
+supported_languages:
+  - en
+  - hi
