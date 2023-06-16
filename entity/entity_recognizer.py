@@ -45,7 +45,7 @@ class EntityRecognizer:
             for ent_val, ent_variations in self.variations_dict[ent_type].items():
                 for variation in ent_variations:
                     variation = variation.replace(" ", "")
-                    variation_pattern = r"\b{}\b".format("\s*".join(list(variation)))
+                    variation_pattern = r"{}".format("\s*".join(list(variation)))
                     match = list(re.finditer(variation_pattern, sentence))
                     if not match:
                         continue
