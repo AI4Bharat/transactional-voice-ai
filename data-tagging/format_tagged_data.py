@@ -7,7 +7,7 @@ import pandas as pd
 WRITE_PATH = "data/tagged-data-formatted/"
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--data-file")
+parser.add_argument("--data-file", required=True)
 args = parser.parse_args()
 
 df = pd.read_csv(args.data_file)
