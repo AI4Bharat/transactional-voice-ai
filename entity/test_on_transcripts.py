@@ -74,6 +74,8 @@ def normalize_entities(ent_list):
 def main(args):
     entity_recognizer = EntityRecognizer(lang=args.lang)
     data_df = pd.read_csv(args.gt_file)
+    data_df = data_df.dropna()
+    data_df = data_df.reset_index(drop=True)
     entity_data = list()
     for i, row in tqdm.tqdm(data_df.iterrows()):
         entities = entity_recognizer.predict(row["Transcript"], row["Transcript ITN"])
