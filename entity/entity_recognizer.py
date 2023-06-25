@@ -7,7 +7,12 @@ ENTITY_PATTERN_PATH = "entity/data/patterns.yaml"
 
 
 def intersection_check(start1, end1, start2, end2):
-    if start1 <= start2 <= end1 or start1 <= end2 <= end1 or start2 <= start1 <= end2 or start2 <= end1 <= end2:
+    if (
+        start1 <= start2 <= end1
+        or start1 <= end2 <= end1
+        or start2 <= start1 <= end2
+        or start2 <= end1 <= end2
+    ):
         return True
     else:
         return False
