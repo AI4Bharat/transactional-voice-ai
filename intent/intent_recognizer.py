@@ -2,8 +2,7 @@ import pickle
 
 import numpy as np
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, Trainer
-
-from intent import utils
+from utils import Dataset
 
 MODEL = "ai4bharat/indic-bert"
 
@@ -33,7 +32,7 @@ class IntentRecognizer:
         sentence_tokenized = self.tokenizer(
             sentence, padding=True, truncation=True, max_length=512
         )
-        model_in = utils.Dataset(sentence_tokenized)
+        model_in = Dataset(sentence_tokenized)
         raw_pred, _, _ = self.test_trainer.predict(model_in)
         probs = softmax(raw_pred)
         y_pred = np.argmax(probs, axis=1)[0]
