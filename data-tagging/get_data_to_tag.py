@@ -3,7 +3,7 @@ from datetime import datetime
 
 import pandas as pd
 
-DB_READ_PATH = "../db/logger.tsv"
+DB_READ_PATH = "db/logger.tsv"
 URL_BASE = "https://classlm.blob.core.windows.net/backend-logs/{}.wav"
 
 parser = argparse.ArgumentParser()
@@ -50,8 +50,8 @@ data_en = convert_to_data_format(db_df_en)
 data_hi = convert_to_data_format(db_df_hi)
 
 data_en.to_csv(
-    f"data/data-to-upload/{args.start_date}-to-{args.end_date}-en.csv", index=False
+    f"data-tagging/data/data-to-upload/{args.start_date}-to-{args.end_date}-en.csv", index=False
 )
 data_hi.to_csv(
-    f"data/data-to-upload/{args.start_date}-to-{args.end_date}-hi.csv", index=False
+    f"data-tagging/data/data-to-upload/{args.start_date}-to-{args.end_date}-hi.csv", index=False
 )
