@@ -29,7 +29,7 @@ def test(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--test-data", required=True)
+    parser.add_argument("--gt-file", required=True)
     parser.add_argument("--model-path", required=True)
     parser.add_argument("--label-dict-pkl", required=True)
     parser.add_argument("--sample-file", required=True)
