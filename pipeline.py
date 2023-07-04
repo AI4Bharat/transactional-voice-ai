@@ -11,11 +11,11 @@ class PredictionPipeline:
     def __init__(self):
         with open("config.yaml") as f:
             self.config = yaml.load(f, yaml.BaseLoader)
-        if not checks.check_intent():
+        if not checks.check_intent(self.config):
             raise ValueError(
                 "Unsupported intents found. Compare config and supported labels"
             )
-        if not checks.check_entity():
+        if not checks.check_entity(self.config):
             raise ValueError(
                 "Unsupported entities found. Compare config and supported entities"
             )

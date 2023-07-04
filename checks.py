@@ -1,12 +1,7 @@
 import pickle
 
-import yaml
 
-with open("config.yaml") as f:
-    config = yaml.load(f, yaml.BaseLoader)
-
-
-def check_intent():
+def check_intent(config):
     defined_intents = set(config["intent"]["supported_intents"])
     with open(config["intent"]["label_dict_path"], "rb") as f:
         supported_intents = set(pickle.load(f).keys())
@@ -16,7 +11,7 @@ def check_intent():
         return True
 
 
-def check_entity():
+def check_entity(config):
     defined_entities = set(config["entities"]["supported_entities"])
     for lang in config["supported_languages"]:
         with open(config["entities"]["variation_path"][lang]) as f:
