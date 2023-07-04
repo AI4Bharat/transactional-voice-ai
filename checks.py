@@ -1,5 +1,5 @@
 import pickle
-
+import yaml
 
 def check_intent(config):
     defined_intents = set(config["intent"]["supported_intents"])
