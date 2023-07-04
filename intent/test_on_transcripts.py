@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 
 def test(args):
-    df = pd.read_csv(args.test_data)
+    df = pd.read_csv(args.gt_file)
     df = df.dropna()
 
     intent_recognizer = IntentRecognizer(
