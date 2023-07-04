@@ -92,7 +92,10 @@ class EntityRecognizer:
     def format_amount(self, ent_val):
         remove_rupees_substring = [
             "rupees",
+            "rupee",
             "rs",
+            "rupes",
+            "ruppes",
             "रूपीस",
             "रुपीस",
             "रूपी",

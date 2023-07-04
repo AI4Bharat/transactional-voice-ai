@@ -2,9 +2,13 @@ amount_of_money:
   - rupees *(\d\s?)+
   - rupee *(\d\s?)+
   - rs *(\d\s?)+
+  - rupes *(\d\s?)+
+  - ruppes *(\d\s?)+
   - (\d\s?)+ *rupees
   - (\d\s?)+ *rupee
   - (\d\s?)+ *rs
+  - (\d\s?)+ rupes
+  - (\d\s?)+ ruppes
   - (\d\s?)+ *रूपीस
   - (\d\s?)+ *रुपीस
   - (\d\s?)+ *रूपी
