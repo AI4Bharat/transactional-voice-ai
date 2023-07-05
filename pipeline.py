@@ -20,6 +20,8 @@ class PredictionPipeline:
                 "Unsupported entities found. Compare config and supported entities"
             )
 
+        self.supported_languages  = self.config["supported_languages"]
+
         self.asr_mode = self.config["asr"]["hotword_mode"]
         if self.asr_mode == "none":
             use_hotwords = False
@@ -56,6 +58,15 @@ class PredictionPipeline:
         }
 
     def predict(self, audio_file, lang, additional_hotwords=[], hotword_weight=None):
+        if lang not in self.supported_languages:
+            return {
+                "transcript": "",
+                "transcript_itn": "",
+                "intent": "unsupported_lang",
+                "intent_orig": "unsupported_lang",
+                "intent_prob": 1.0,
+                "entities": [],
+            }
         list_hotwords = self.lang_to_hotword[lang] + additional_hotwords
         if not hotword_weight:
             hotword_weight = self.hotword_weight

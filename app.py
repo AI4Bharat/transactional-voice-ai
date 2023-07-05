@@ -56,7 +56,7 @@ def get_predictions(language, audio_data, hotword_list, hotword_weight):
 
     row = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
         uuid,
-        language_mapping[language],
+        language_mapping.get(language, language),
         predictions["transcript_itn"],
         predictions["entities"],
         predictions["intent"],
