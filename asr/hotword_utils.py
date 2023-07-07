@@ -16,6 +16,7 @@ def get_entity_variations(lang):
     for ent_type, variation_dict in entities.items():
         for ent_value, variation_list in variation_dict.items():
             variations.extend(variation_list)
+    variations = list(map(lambda x: x.lower(), variations))
     return variations
 
 
