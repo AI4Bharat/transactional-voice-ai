@@ -4,6 +4,7 @@ import nemo.collections.asr as nemo_asr
 import torch
 from inverse_text_normalization.run_predict import inverse_normalize_text
 from pyctcdecode import build_ctcdecoder
+import kenlm
 
 
 def standardize_output(text, lang):
@@ -27,8 +28,12 @@ class ConformerRecognizer:
             self.NEMO_PATH, map_location=torch.device("cuda")
         )
         self.use_hotwords = use_hotwords
+        
+        self.kenlm_model = kenlm.Model("/home/deployment/checkpoints/asr/nemo/conf-large/english_lm.bin")
+        self.kenlm_model_path = "/home/deployment/checkpoints/asr/nemo/conf-large/english_lm.bin"
+
         if self.use_hotwords:
-            self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary)
+            self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary, self.kenlm_model_path, alpha=0.5)
 
     def transcribe(self, files, inference_hotwords=[], hotword_weight=10.0):
         if self.use_hotwords:
