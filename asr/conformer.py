@@ -4,7 +4,6 @@ import nemo.collections.asr as nemo_asr
 import torch
 from inverse_text_normalization.run_predict import inverse_normalize_text
 from pyctcdecode import build_ctcdecoder
-import kenlm
 
 
 def standardize_output(text, lang):
@@ -21,7 +20,7 @@ def standardize_output(text, lang):
 
 
 class ConformerRecognizer:
-    def __init__(self, model_path, lang, use_hotwords=False):
+    def __init__(self, model_path, lang, lm_path=None, alpha=1.0, beta=1.5, use_hotwords=False):
         self.NEMO_PATH = model_path
         self.lang = lang
         self.asr_model = nemo_asr.models.ASRModel.restore_from(
@@ -29,15 +28,20 @@ class ConformerRecognizer:
         )
         self.use_hotwords = use_hotwords
         
-        self.kenlm_model = kenlm.Model("/home/deployment/checkpoints/asr/nemo/conf-large/english_lm.bin")
-        self.kenlm_model_path = "/home/deployment/checkpoints/asr/nemo/conf-large/english_lm.bin"
-
-        if self.use_hotwords:
-            self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary, self.kenlm_model_path, alpha=0.5)
+        self.lm_path = lm_path
+        if not self.lm_path:
+            self.use_lm = False
+        else:
+            self.use_lm = True
+        
+        if self.use_lm:
+            self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary, self.lm_path, alpha=alpha, beta=beta)
+        elif self.use_hotwords:
+            self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary)
 
     def transcribe(self, files, inference_hotwords=[], hotword_weight=10.0):
-        if self.use_hotwords:
-            return self.transcribe_hotword(files, inference_hotwords, hotword_weight)
+        if self.use_hotwords or self.use_lm:
+            return self.transcribe_ctcdecoder(files, inference_hotwords, hotword_weight)
         else:
             return self.transcribe_greedy(files)
 
@@ -47,7 +51,7 @@ class ConformerRecognizer:
         transcript, itn_transcript = standardize_output(transcript, self.lang)
         return transcript, itn_transcript
 
-    def transcribe_hotword(self, files, inference_hotwords, hotword_weight=10.0):
+    def transcribe_ctcdecoder(self, files, inference_hotwords, hotword_weight=10.0):
         logits = self.asr_model.transcribe(
             paths2audio_files=files, batch_size=1, logprobs=True
         )[0]
