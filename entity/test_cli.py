@@ -3,7 +3,7 @@ import argparse
 from entity_recognizer import EntityRecognizer
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--lang")
+parser.add_argument("--lang", required=True)
 args = parser.parse_args()
 
 entity_recognizer = EntityRecognizer(lang=args.lang)
