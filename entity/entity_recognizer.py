@@ -50,11 +50,16 @@ class EntityRecognizer:
             for ent_val, ent_variations in self.variations_dict[ent_type].items():
                 for variation in ent_variations:
                     variation = variation.replace(" ", "")
+                    variation = variation.lower()
                     variation_pattern = r"{}".format("\s*".join(list(variation)))
                     match = list(re.finditer(variation_pattern, sentence))
                     if not match:
                         continue
                     for m in match:
+                        start = m.start()
+                        end = m.end()
+                        if start > 0 and sentence[start-1] != " ": continue
+                        if end < len(sentence) and sentence[end] != " ": continue
                         entities.append(
                             self.create_entity_dict_from_match(
                                 ent_type, variation, ent_val, m.start(), m.end()
@@ -71,7 +76,11 @@ class EntityRecognizer:
                 )
 
         filtered_entities = self.remove_overlap(entities)
-        final_entities = self.format_entities(filtered_entities)
+        formatted_entities = self.format_entities(filtered_entities)
+        final_entities = self.remove_duplicate(formatted_entities)
+        ########### TEMP UGLY FIX ###########################
+        final_entities = self.fix_joint_number_amount(final_entities)
+        ###################################################
         return final_entities
 
     def remove_overlap(self, entities):
@@ -87,6 +96,16 @@ class EntityRecognizer:
             if not intersects:
                 filtered_entities.append(ent)
 
+        return filtered_entities
+    
+    def remove_duplicate(self, entities):
+        filtered_entities = list()
+        retained_type_val = set()
+        for ent in entities:
+            type_val = (ent["entity"], ent["value"])
+            if type_val in retained_type_val: continue
+            retained_type_val.add(type_val)
+            filtered_entities.append(ent)
         return filtered_entities
 
     def format_amount(self, ent_val):
@@ -129,3 +148,23 @@ class EntityRecognizer:
             else:
                 entities_formatted.append(ent)
         return entities_formatted
+
+    ############### TEMP UGLY FIX ##############################################
+    def fix_joint_number_amount(self, entities):
+        """
+        Fix the data of format: 9 9 9 9 9 9 9 9 9 9 1 rupee
+        where first 10 digits are mobile number and later digits is amount of money
+        """
+        new_entities = list()
+        for ent in entities:
+            if ent["entity"] == "amount_of_money" and len(ent["value"]) > 10:
+                mobile_val, amount_val = ent["value"][:10], ent["value"][10:]
+                mobile_ent = self.create_entity_dict_from_match("mobile_number", ent["word"], mobile_val, ent["start"], ent["end"])
+                amount_ent = self.create_entity_dict_from_match("amount_of_money", ent["word"], amount_val, ent["start"], ent["end"])
+                new_entities.extend([mobile_ent, amount_ent])
+            else:
+                new_entities.append(ent)
+
+        return new_entities
+    ###########################################################################
+    
