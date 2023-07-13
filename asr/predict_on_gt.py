@@ -35,7 +35,7 @@ def main(args):
         use_hotwords = True
         hotwords = hotword_utils.hotword_to_fn[hotword_mode](lang=args.lang)
     asr = conformer.ConformerRecognizer(
-        model_path=args.model_path, lang=args.lang, use_hotwords=use_hotwords
+        model_path=args.model_path, lang=args.lang, lm_path=args.lm_path, alpha=args.alpha, beta=args.beta, use_hotwords=use_hotwords
     )
 
     df = pd.read_csv(args.gt_file)
@@ -43,6 +43,7 @@ def main(args):
     urls = df["URL"]
     transcripts = list()
     transcripts_itn = list()
+    transcription_time = list()
     for url in tqdm.tqdm(urls):
         fname = download_audio(url)
         if not fname:
@@ -58,9 +59,10 @@ def main(args):
         end = time.time()
         transcripts.append(transcript)
         transcripts_itn.append(transcript_itn)
+        transcription_time.append(end - start)
     df["Transcript"] = transcripts
     df["Transcript ITN"] = transcripts_itn
-    df["Transcription Time"] = end - start
+    df["Transcription Time"] = transcription_time
     df.to_csv(args.save_file, index=False)
 
 
@@ -74,6 +76,9 @@ if __name__ == "__main__":
         default="none",
     )
     parser.add_argument("--hotword-weight", type=float, default=10.0)
+    parser.add_argument("--lm-path", type=str, default=None)
+    parser.add_argument("--alpha", type=float, default=1.0)
+    parser.add_argument("--beta", type=float, default=1.5)
     parser.add_argument("--gt-file", required=True)
     parser.add_argument("--save-file", required=True)
     args = parser.parse_args()
