@@ -34,11 +34,11 @@ def calc_metrics(true_entities, pred_entities):
     entity_report = list()
     for ent in entity_types:
         try:
-            precision = (n_TP[ent]) / (n_TP[ent] + n_FN[ent])
+            precision = (n_TP[ent]) / (n_TP[ent] + n_FP[ent])
         except ZeroDivisionError:
             precision = 0
         try:
-            recall = (n_TP[ent]) / (n_TP[ent] + n_FP[ent])
+            recall = (n_TP[ent]) / (n_TP[ent] + n_FN[ent])
         except ZeroDivisionError:
             recall = 0
         try:
@@ -70,11 +70,26 @@ def normalize_entities(ent_list):
         normalized_ent.append("{}-{}".format(ent_type, ent_val))
     return normalized_ent
 
+def retain(true_ent_list):
+    """
+    Retain a sample if it is filled
+    If it is not filled and contains nan or "enter xyz", drop
+    """
+    for ent in true_ent_list:
+        if "nan" in true_ent_list:
+            return False
+        if "enter" in true_ent_list:
+            return False
+        if "select" in true_ent_list:
+            return False
+    return True
 
 def main(args):
     entity_recognizer = EntityRecognizer(lang=args.lang)
     data_df = pd.read_csv(args.gt_file)
     data_df = data_df.dropna()
+    data_df = data_df.reset_index(drop=True)
+    data_df = data_df[data_df["True Entities"].apply(retain)]
     data_df = data_df.reset_index(drop=True)
     entity_data = list()
     for i, row in tqdm.tqdm(data_df.iterrows()):
