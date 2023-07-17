@@ -20,7 +20,7 @@ class PredictionPipeline:
                 "Unsupported entities found. Compare config and supported entities"
             )
 
-        self.supported_languages  = self.config["supported_languages"]
+        self.supported_languages = self.config["supported_languages"]
 
         self.asr_mode = self.config["asr"]["hotword_mode"]
         if self.asr_mode == "none":
