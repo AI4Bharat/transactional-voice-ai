@@ -20,22 +20,26 @@ def standardize_output(text, lang):
 
 
 class ConformerRecognizer:
-    def __init__(self, model_path, lang, lm_path=None, alpha=1.0, beta=1.5, use_hotwords=False):
+    def __init__(
+        self, model_path, lang, lm_path=None, alpha=1.0, beta=1.5, use_hotwords=False
+    ):
         self.NEMO_PATH = model_path
         self.lang = lang
         self.asr_model = nemo_asr.models.ASRModel.restore_from(
             self.NEMO_PATH, map_location=torch.device("cuda")
         )
         self.use_hotwords = use_hotwords
-        
+
         self.lm_path = lm_path
         if not self.lm_path:
             self.use_lm = False
         else:
             self.use_lm = True
-        
+
         if self.use_lm:
-            self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary, self.lm_path, alpha=alpha, beta=beta)
+            self.decoder = build_ctcdecoder(
+                self.asr_model.decoder.vocabulary, self.lm_path, alpha=alpha, beta=beta
+            )
         elif self.use_hotwords:
             self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary)
 

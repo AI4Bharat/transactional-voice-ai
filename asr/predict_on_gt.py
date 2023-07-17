@@ -35,7 +35,12 @@ def main(args):
         use_hotwords = True
         hotwords = hotword_utils.hotword_to_fn[hotword_mode](lang=args.lang)
     asr = conformer.ConformerRecognizer(
-        model_path=args.model_path, lang=args.lang, lm_path=args.lm_path, alpha=args.alpha, beta=args.beta, use_hotwords=use_hotwords
+        model_path=args.model_path,
+        lang=args.lang,
+        lm_path=args.lm_path,
+        alpha=args.alpha,
+        beta=args.beta,
+        use_hotwords=use_hotwords,
     )
 
     df = pd.read_csv(args.gt_file)

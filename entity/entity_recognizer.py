@@ -58,8 +58,10 @@ class EntityRecognizer:
                     for m in match:
                         start = m.start()
                         end = m.end()
-                        if start > 0 and sentence[start-1] != " ": continue
-                        if end < len(sentence) and sentence[end] != " ": continue
+                        if start > 0 and sentence[start - 1] != " ":
+                            continue
+                        if end < len(sentence) and sentence[end] != " ":
+                            continue
                         entities.append(
                             self.create_entity_dict_from_match(
                                 ent_type, variation, ent_val, m.start(), m.end()
@@ -97,13 +99,14 @@ class EntityRecognizer:
                 filtered_entities.append(ent)
 
         return filtered_entities
-    
+
     def remove_duplicate(self, entities):
         filtered_entities = list()
         retained_type_val = set()
         for ent in entities:
             type_val = (ent["entity"], ent["value"])
-            if type_val in retained_type_val: continue
+            if type_val in retained_type_val:
+                continue
             retained_type_val.add(type_val)
             filtered_entities.append(ent)
         return filtered_entities
@@ -159,12 +162,16 @@ class EntityRecognizer:
         for ent in entities:
             if ent["entity"] == "amount_of_money" and len(ent["value"]) > 10:
                 mobile_val, amount_val = ent["value"][:10], ent["value"][10:]
-                mobile_ent = self.create_entity_dict_from_match("mobile_number", ent["word"], mobile_val, ent["start"], ent["end"])
-                amount_ent = self.create_entity_dict_from_match("amount_of_money", ent["word"], amount_val, ent["start"], ent["end"])
+                mobile_ent = self.create_entity_dict_from_match(
+                    "mobile_number", ent["word"], mobile_val, ent["start"], ent["end"]
+                )
+                amount_ent = self.create_entity_dict_from_match(
+                    "amount_of_money", ent["word"], amount_val, ent["start"], ent["end"]
+                )
                 new_entities.extend([mobile_ent, amount_ent])
             else:
                 new_entities.append(ent)
 
         return new_entities
+
     ###########################################################################
-    

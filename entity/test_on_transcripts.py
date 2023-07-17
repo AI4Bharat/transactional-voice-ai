@@ -70,6 +70,7 @@ def normalize_entities(ent_list):
         normalized_ent.append("{}-{}".format(ent_type, ent_val))
     return normalized_ent
 
+
 def retain(true_ent_list):
     """
     Retain a sample if it is filled
@@ -83,6 +84,7 @@ def retain(true_ent_list):
         if "select" in true_ent_list:
             return False
     return True
+
 
 def main(args):
     entity_recognizer = EntityRecognizer(lang=args.lang)
