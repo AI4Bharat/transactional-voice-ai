@@ -24,7 +24,6 @@ AZURE_ACCCOUNT_URL = "https://classlm.blob.core.windows.net"
 AZURE_CONTAINER = "backend-logs"
 
 prediction_pipeline = PredictionPipeline()
-language_mapping = {"en": "English", "hi": "Hindi"}
 
 
 def upload_audio(fpath):
@@ -56,7 +55,7 @@ def get_predictions(language, audio_data, hotword_list, hotword_weight):
 
     row = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
         uuid,
-        language_mapping.get(language, language),
+        language,
         predictions["transcript_itn"],
         predictions["entities"],
         predictions["intent"],

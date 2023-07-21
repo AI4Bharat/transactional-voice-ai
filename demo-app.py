@@ -62,7 +62,7 @@ def get_predictions(language, audio_file, mic_audio_file=None):
 
     row = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
         uuid,
-        language,
+        language_mapping[language],
         predictions["transcript_itn"],
         predictions["entities"],
         predictions["intent"],
