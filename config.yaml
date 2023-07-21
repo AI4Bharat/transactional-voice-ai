@@ -1,9 +1,22 @@
+supported_languages:
+  - en
+  - hi
+
 asr:
-  model_path:
-    en: asr/models/conformer-en.nemo
-    hi: asr/models/conformer-hi.nemo
-  hotword_mode: entities-unique
-  hotword_weight: 10.0
+  en:
+    am_path: asr/models/am/en-conformer.nemo
+    lm_path:
+    lm_alpha:
+    lm_beta:
+    hotword_mode: entities-unique
+    hotword_weight: 10.0
+  hi:
+    am_path: asr/models/am/hi-conformer.nemo
+    lm_path: asr/models/lm/hi-lm.binary
+    lm_alpha: 0.5
+    lm_beta: 0.5
+    hotword_mode: entities-unique
+    hotword_weight: 2.5
 
 intent:
   model_path: intent/models/current-live/checkpoint-1500
@@ -33,14 +46,6 @@ entities:
   pattern_path: entity/data/patterns.yaml
   supported_entities:
   - bank_name
-  - state_name
-  - electricity_board
-  - pipe_gas_provider_name
   - vehicle_number
   - mobile_number
   - amount_of_money
-  - lpg_gas_provider_name
-
-supported_languages:
-  - en
-  - hi

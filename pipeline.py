@@ -19,26 +19,48 @@ class PredictionPipeline:
             raise ValueError(
                 "Unsupported entities found. Compare config and supported entities"
             )
+        # TODO CHECK ASR DEFINITIONS FOR SUPPORTED LANGUAGES
+        # TODO CHECK ASR LM PARAMS IF LM IS TO BE USED
+        # TODO CHECK ASR HW PARAMS IF HW IS TO BE USED
 
         self.supported_languages = self.config["supported_languages"]
 
-        self.asr_mode = self.config["asr"]["hotword_mode"]
-        if self.asr_mode == "none":
-            use_hotwords = False
-            self.hotwords_en = list()
-            self.hotwords_hi = list()
-        else:
-            use_hotwords = True
-            self.hotwords_en = hotword_utils.hotword_to_fn[self.asr_mode](lang="en")
-            self.hotwords_hi = hotword_utils.hotword_to_fn[self.asr_mode](lang="hi")
-        self.hotword_weight = float(self.config["asr"]["hotword_weight"])
+        # Initialize the ASR
+        self.lang_to_asr = dict()
+        self.lang_to_hw_list = dict()
+        self.lang_to_hw_weight = dict()
+        for lang in self.supported_languages:
+            lang_config = self.config["asr"][lang]
+            lang_am = lang_config["am_path"]
+            lang_lm = lang_config["lm_path"]
+            lang_lm_alpha = lang_config["lm_alpha"]
+            lang_lm_beta = lang_config["lm_beta"]
+            lang_hw_mode = lang_config["hotword_mode"]
+            lang_hw_weight = lang_config["hotword_weight"]
 
-        self.asr_en = ConformerRecognizer(
-            self.config["asr"]["model_path"]["en"], "en", use_hotwords
-        )
-        self.asr_hi = ConformerRecognizer(
-            self.config["asr"]["model_path"]["hi"], "hi", use_hotwords
-        )
+            if lang_lm:
+                lang_lm_alpha = float(lang_lm_alpha)
+                lang_lm_beta = float(lang_lm_beta)
+
+            if lang_hw_mode == "none":
+                lang_use_hw = False
+                self.lang_to_hw_weight[lang] = 0.0
+                self.lang_to_hw_list[lang] = list()
+            else:
+                lang_use_hw = True
+                self.lang_to_hw_weight[lang] = float(lang_hw_weight)
+                self.lang_to_hw_list[lang] = hotword_utils.hotword_to_fn[lang_hw_mode](
+                    lang=lang
+                )
+
+            self.lang_to_asr[lang] = ConformerRecognizer(
+                lang=lang,
+                model_path=lang_am,
+                lm_path=lang_lm,
+                alpha=lang_lm_alpha,
+                beta=lang_lm_beta,
+                use_hotwords=lang_use_hw,
+            )
 
         self.intent_recognizer = IntentRecognizer(
             self.config["intent"]["model_path"],
@@ -46,16 +68,9 @@ class PredictionPipeline:
             float(self.config["intent"]["confidence_threshold"]),
         )
 
-        self.entity_recognizer_en = EntityRecognizer("en")
-        self.entity_recognizer_hi = EntityRecognizer("hi")
-
-        self.lang_to_asr = {"en": self.asr_en, "hi": self.asr_hi}
-        self.lang_to_hotword = {"en": self.hotwords_en, "hi": self.hotwords_hi}
-
-        self.lang_to_entity = {
-            "en": self.entity_recognizer_en,
-            "hi": self.entity_recognizer_hi,
-        }
+        self.lang_to_entity_recognizer = dict()
+        for lang in self.supported_languages:
+            self.lang_to_entity_recognizer[lang] = EntityRecognizer(lang)
 
     def predict(self, audio_file, lang, additional_hotwords=[], hotword_weight=None):
         if lang not in self.supported_languages:
@@ -67,16 +82,21 @@ class PredictionPipeline:
                 "intent_prob": 1.0,
                 "entities": [],
             }
-        list_hotwords = self.lang_to_hotword[lang] + additional_hotwords
+
+        list_hotwords = self.lang_to_hw_list[lang] + additional_hotwords
         if not hotword_weight:
-            hotword_weight = self.hotword_weight
+            hotword_weight = self.lang_to_hw_weight[lang]
+        list_hotwords = self.lang_to_hw_list[lang] + additional_hotwords
         transcript, transcript_itn = self.lang_to_asr[lang].transcribe(
             [audio_file], list_hotwords, hotword_weight
         )
+
         intent, intent_orig, intent_prob = self.intent_recognizer.predict(
             transcript_itn
         )
-        entities = self.lang_to_entity[lang].predict(transcript, transcript_itn)
+        entities = self.lang_to_entity_recognizer[lang].predict(
+            transcript, transcript_itn
+        )
         return {
             "transcript": transcript,
             "transcript_itn": transcript_itn,
