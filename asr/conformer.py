@@ -42,6 +42,9 @@ class ConformerRecognizer:
             )
         elif self.use_hotwords:
             self.decoder = build_ctcdecoder(self.asr_model.decoder.vocabulary)
+        print(
+            f"Initialized ASR for lang {lang} | Use LM {self.use_lm} Alpha {alpha} Beta {beta} | Use HW {self.use_hotwords}"
+        )
 
     def transcribe(self, files, inference_hotwords=[], hotword_weight=10.0):
         if self.use_hotwords or self.use_lm:
