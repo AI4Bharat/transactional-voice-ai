@@ -118,7 +118,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--gt-file", required=True)
-    parser.add_argument("--lang", choices=["en", "hi"], required=True)
+    parser.add_argument("--lang", choices=["en", "hi", "or", "ta"], required=True)
     parser.add_argument("--report-file", required=True)
     parser.add_argument("--sample-file", required=True)
     args = parser.parse_args()

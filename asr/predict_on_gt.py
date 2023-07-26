@@ -74,7 +74,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", required=True)
-    parser.add_argument("--lang", choices=["en", "hi"], required=True)
+    parser.add_argument("--lang", choices=["en", "hi", "or", "ta"], required=True)
     parser.add_argument(
         "--hotword-mode",
         choices=["none"] + list(hotword_utils.hotword_to_fn.keys()),

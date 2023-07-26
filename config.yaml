@@ -1,6 +1,8 @@
 supported_languages:
   - en
   - hi
+  - ta
+  - or
 
 asr:
   en:
@@ -17,10 +19,24 @@ asr:
     lm_beta: 0.5
     hotword_mode: entities-unique
     hotword_weight: 2.5
+  ta:
+    am_path: asr/models/am/ta-conformer.nemo
+    lm_path:
+    lm_alpha:
+    lm_beta:
+    hotword_mode: entities-unique
+    hotword_weight: 10.0
+  or:
+    am_path: asr/models/am/or-dummy-conformer.nemo
+    lm_path:
+    lm_alpha:
+    lm_beta:
+    hotword_mode: entities-unique
+    hotword_weight: 10.0
 
 intent:
-  model_path: intent/models/current-live/checkpoint-1500
-  label_dict_path: intent/models/current-live/labels-dict.pkl
+  model_path: intent/models/all-lang-all/checkpoint-3000
+  label_dict_path: intent/models/all-lang-all/labels-dict.pkl
   confidence_threshold: 0.85
   supported_intents:
   - balance_check
@@ -43,6 +59,8 @@ entities:
   variation_path: 
     en: entity/data/variations/variations-en.yaml
     hi: entity/data/variations/variations-hi.yaml
+    ta: entity/data/variations/variations-ta.yaml
+    or: entity/data/variations/variations-or.yaml
   pattern_path: entity/data/patterns.yaml
   supported_entities:
   - bank_name

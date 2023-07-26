@@ -8,12 +8,8 @@ from pyctcdecode import build_ctcdecoder
 
 def standardize_output(text, lang):
     text = text.lower()
-    text = re.sub(r"[^A-Za-z0-9\u0900-\u097F\s]+", "", text)
     text = " ".join(text.split())
-    try:
-        itn_text = inverse_normalize_text([text], lang=lang)[0]
-    except Exception:
-        itn_text = text
+    itn_text = inverse_normalize_text([text], lang=lang)[0]
     text = text.lower()
     itn_text = itn_text.lower()
     return text, itn_text
