@@ -1,7 +1,6 @@
 Voucher
 Petrol
 Diesel
-Tel
 UPI
 uFill
 ID
@@ -30,6 +29,7 @@ Postpaid
 Mobile
 Transfer
 Rupees
+Rupee
 Double
 Triple
 Number

@@ -3,7 +3,7 @@ bank_name:
   - अर्बन को ऑप बैंक लिमिटेड धरनगांव
   - अर्बन धरनगांव बैंक
   - अर्बन कोऑपरेटिव धरनगांव
-  A P Mahesh Co-operative Urban Bank Ltd:
+  A P Mahesh Cooperative Urban Bank Ltd:
   - आंध्र प्रदेश महेश कोऑपरेटिव अर्बन बैंक लिमिटेड
   - आंध्र प्रदेश महेश कोऑपरेटिव अर्बन बैंक
   - आंध्र प्रदेश महेश कोऑपरेटिव बैंक
@@ -144,7 +144,7 @@ bank_name:
   - अंबाजो गाई पीपल्स कोऑपरेटिव बैंक
   - अंबाजो गाई पीपल्स कोऑपरेटिव
   - अंबाजो गाई पीपल्स बैंक
-  Ambarnath Jai Hind Cooperative Bank Ltd:
+  Ambarnath Jai Hind Cooperative Bank Ltd.:
   - अम्बरनाथ जई हिन्द कोऑपरेटिव बैंक लिमिटेड
   - अम्बरनाथ जई हिन्द कोऑपरेटिव बैंक
   - अम्बरनाथ जई हिन्द बैंक
@@ -206,7 +206,7 @@ bank_name:
   - असम ग्रामीण विकास बैंक  
   - असम विकास बैंक  
   - असम ग्रामीण बैंक  
-  Associate Co-operative Bank Limited-Surat:
+  Associate Co-operative Bank Limited,Surat:
   - असोसिएट कोऑपरेटिव बैंक लिमिटेड सुरत
   - असोसिएट कोऑपरेटिव बैंक सुरत
   - असोसिएट कोऑपरेटिव बैंक लिमिटेड
@@ -303,7 +303,7 @@ bank_name:
   - बिकोलिम अर्बन कोऑपरेटिव बैंक
   Bombay Mercantile Co-Op Bank Ltd:
   - बोम्बे मर्केन्टाइल को ऑप बैंक लिमिटेड
-  CITI Retail:
+  CITI Bank:
   - सी आई टी आई रीटेल
   - सीटी रीटेल
   - सीटीआई बैंक
@@ -311,7 +311,8 @@ bank_name:
   - सिटी रिटेल
   Canara Bank:
   - कनारा बैंक
-  - केनरा बैंक   
+  - केनरा बैंक
+  - कैनरा बैंक   
   Capital Small Finance Bank:
   - केपिटल स्माल फाइनैंस बैंक
   - कैपिटल स्माल फाइनैंस बैंक
@@ -321,6 +322,7 @@ bank_name:
   Central Bank of India:
   - सीबीआई
   - सेन्ट्रल बैंक
+  - सेंट्रल बैंक
   - सेंट्रल बैंक ऑफ इंडिया
   - सेंट्रल बैंक औफ इंडिया
   - सेंट्रल बैंक ऑफ इन्डिया
@@ -450,7 +452,7 @@ bank_name:
   - हिम्मतनगर नागरिक सहकारी बैंक लिमिटेड
   - हिम्मतनगर नागरिक सहकारी बैंक
   Hutatma Co Op Bank Ltd: []
-  ICICI Bank:
+  ICICI Bank Limited:
   - आईसीआईसीआई बैंक
   - आईसीआईसीआई
   - आईसीआईसी बैंक
@@ -472,6 +474,10 @@ bank_name:
   - आईपीपीबी
   - पोस्ट आफिस बैंक
   - पोस्ट ऑफिस बैंक
+  - इंडियन पोस्ट पेमेंट बैंक
+  - इंडियन पोस्ट
+  - पोस्ट पेमेंट बैंक
+  - भारतीय डाक भुगतान बैंक
   Indian Bank:
   - इन्डियन बैंक
   - इंडियन बैंक
@@ -589,6 +595,7 @@ bank_name:
   - कर्नाटक विकास ग्रामीण बैंक
   Karur vysya Bank:
   - करुर वैस्य बैंक
+  - करूर वैश्य बैंक
   - के वी बी
   - करुर वैस्य
   Kerala Gramina Bank:
@@ -610,6 +617,8 @@ bank_name:
   - कोटक महिन्द्रा
   - कोटक महेंद्रा
   - कोटक बैंक
+  - कोटेक महिंद्रा बैंक
+  - कोटेक महिंद्रा
   Kottakkal Co- Op Urban Bank Ltd:
   - कोट्टाकल को ऑप अर्बन बैंक लिमिटेड
   - कोट्टाकल को ऑप बैंक
@@ -707,6 +716,7 @@ bank_name:
   Nainital Bank Ltd:
   - नैनिताल बैंक लिमिटेड
   - नैनिताल बैंक
+  - नैनीताल बैंक
   Navi Mumbai Co-operative Bank Limited:
   - नावी मुम्बई कोऑपरेटिव बैंक लिमिटेड
   - नवी मुम्बई कोऑपरेटिव बैंक 
@@ -801,6 +811,7 @@ bank_name:
   Rajkot Nagrik sahakari Bank:
   - रजकोट नाग्रिक सहाकारी बैंक
   - राजकोट नागरिक सहकारी बैंक
+  - राजकोट नागरिक बैंक
   Rajkot Peoples Cooperative Bank Ltd:
   - राजकोट पीपल्स कोऑपरेटिव बैंक लिमिटेड
   - रजकोट पीपल्स कोऑपरेटिव बैंक लिमिटेड
@@ -1330,440 +1341,440 @@ bank_name:
   - लक्ष्मी नरसिम्हा स्वामि को ऑप बैंक
   Yes Bank:
   - यस बैंक
-electricity_board:
-  APEPDCL-Eastern Power Distribution CO AP Ltd:
-  - इस्टर्न पॉवर डिस्ट्रिब्यूशन सी ओ ए पी लिमिटेड
-  - ए पी ई पी डी सी एल
-  - इस्टर्न पॉवर डिस्ट्रिब्यूशन को आप लिमिटेड
-  APSPDCL-Southern Power Distribution CO AP Ltd:
-  - साउदर्न पॉवर डिस्ट्रिब्यूशन सी ओ ए पी लिमिटेड
-  - ए पी एस पी डी सी एल
-  - साउदर्न पॉवर डिस्ट्रिब्यूशन को आप लिमिटेड
-  Adani Electricity Mumbai Limited:
-  - अडानी एलेक्ट्रिसिटी मुम्बई लिमिटेड
-  - अडानी
-  Ajmer Vidyut Vitran Nigam Limited (AVVNL):
-  - अजमीर विद्यूत वित्रण निगाम लिमिटेड
-  - ए वी वी एन एल
-  Assam Power Distribution Company Ltd:
-  - असाम पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
-  - ए पी डी सी एल
-  B.E.S.T Mumbai:
-  - बी ई एस टी मुम्बई
-  - बेस्त
-  - बी ई एस टी
-  BSES Rajdhani Power Limited:
-  - बी एस ई एस राजधनी पॉवर लिमिटेड
-  - बी एस ई एस
-  - राजधनी पॉवर लिमिटेड
-  BSES Yamuna Power Limited:
-  - बी एस ई एस यामुना पॉवर लिमिटेड
-  - यामुना पॉवर लिमिटेड
-  Bangalore Electricity Supply Co. Ltd (BESCOM):
-  - बैंगलूर एलेक्ट्रिसिटी सपलाई को लिमिटेड
-  - बेस्कॉम
-  - बी ई एस सी ओ एम
-  Bharatpur Electricity Services Ltd. (BESL):
-  - भारतपुर एलेक्ट्रिसिटी सर्विसेज लिमिटेड
-  - बी ई एस एल
-  Bikaner Electricity Supply Limited (BkESL):
-  - बिकानेर एलेक्ट्रिसिटी सपलाई लिमिटेड
-  - बी के ई एस एल
-  Calcutta Electric Supply Corporation (CESC):
-  - कैलकटा इलैक्ट्रिक सपलाई कॉरपोरेशन
-  - सी ई एस सी
-  Chamundeshwari Electricity Supply Corp Ltd (CESCOM):
-  - चामुण्डेश्वरी एलेक्ट्रिसिटी सपलाई कोर्प लिमिटेड
-  - सेसकॉम
-  - सी ई एस सी ओ एम
-  Chattisgarh State Power Distribution Co. Ltd (CSPDCL):
-  - छत्तिसगढ़ स्टेटे पॉवर डिस्ट्रिब्यूशन को लिमिटेड
-  - सी एस पी डी सी एल
-  DNH Power Distribution Company Limited:
-  - डी एन एच पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
-  - डी एन एच
-  - डी एन एच पी डी सी एल
-  Dakshin Gujarat Vij Company Limited (DGVCL):
-  - दक्षिन गुजरत वीज कम्पनी लिमिटेड
-  - डी जी वी सी एल
-  Dakshin Haryana Bijli Vitran Nigam (DHBVN):
-  - दक्षिन हरयाणा बीजली वित्रण निगाम
-  - डी एच बी वी एन
-  Daman and Diu Electricity:
-  - दामन एंड दियू एलेक्ट्रिसिटी
-  - डी डी ई डी
-  Department of Power Government of Arunachal Pradesh:
-  - अरूणाचल पॉवर
-  - डीपार्टमेंट ओफ पॉवर गवर्नमेन्ट ओफ अरूणाचल प्रादेश
-  Department of Power Nagaland:
-  - डीपार्टमेंट ओफ पॉवर नगालैंड
-  - डी ओ पी एन
-  Electricity Department Chandigarh:
-  - एलेक्ट्रिसिटी डीपार्टमेंट चंदीगढ़
-  - सी एच डी
-  Gift Power Company Limited:
-  - गिफ़्ट पॉवर कम्पनी लिमिटेड
-  Goa Electricity Department:
-  - जीओए एलेक्ट्रिसिटी डीपार्टमेंट
-  - जी ई डी
-  Government of Puducherry Electricity Department:
-  - गवर्नमेन्ट ओफ पुदुचेरी एलेक्ट्रिसिटी डीपार्टमेंट
-  - पी वाइ ई बी
-  Gulbarga Electricity Supply Company Limited:
-  - गुलबर्ग एलेक्ट्रिसिटी सपलाई कम्पनी लिमिटेड
-  - जी ई एस सी ओ एम
-  - जेस्कॉम
-  Himachal Pradesh State Electricity Board:
-  - हिमांचल प्रादेश स्टेटे एलेक्ट्रिसिटी बॉर्ड
-  - एच पी एस ई बी
-  Hubli Electricity Supply Company Ltd (HESCOM):
-  - हुब्ली एलेक्ट्रिसिटी सपलाई कम्पनी लिमिटेड
-  - हेसकॉम
-  - एच ई एस सी ओ एम
-  Jaipur Vidyut Vitran Nigam (JVVNL):
-  - जैपुर विद्यूत वित्रण निगाम
-  - जे वी वी एन एल
-  Jammu and Kashmir Power Development Department:
-  - जम्मु एंड काश्मीर पॉवर डेवेलपमेंट डीपार्टमेंट
-  - जे के पी डी डी
-  Jamshedpur Utilities:
-  - जामशेदपुर यूटीलिटीज
-  - जूस्को
-  - जे यू एस सी ओ
-  Jharkhand Bijli Vitran Nigam Limited (JBVNL):
-  - झारखण्ड बीजली वित्रण निगाम लिमिटेड
-  - जे बी वी एन एल
-  Jodhpur Vidyut Vitran Nigam Limited (JDVVNL):
-  - जोधापुर विद्यूत वित्रण निगाम लिमिटेड
-  - जे डी वी वी एन एल
-  Kannan Devan Hills Plantations Company Private Limited:
-  - कानन देवान हील्स प्लांटेशनों कम्पनी प्राईवेट लिमिटेड
-  - के डी एच पी सी पी एल
-  Kanpur Electricity Supply Company:
-  - कनपुर एलेक्ट्रिसिटी सपलाई कम्पनी
-  - केसको
-  - के ई एस सी ओ
-  Kerala State Electricity Board Ltd. (KSEBL):
-  - केरला स्टेटे एलेक्ट्रिसिटी बॉर्ड लिमिटेड
-  - के एस ई बी एल
-  Kota Electricity Distribution Limited:
-  - कोता एलेक्ट्रिसिटी डिस्ट्रिब्यूशन लिमिटेड
-  - के ई डी एल
-  Lakshadweep Electricity Department:
-  - लक्ष्द्वीप एलेक्ट्रिसिटी डीपार्टमेंट
-  M.P. Madhya Kshetra Vidyut Vitaran:
-  - एम पी मध्या क्षेत्रा विद्यूत वितरन
-  - एम पी एम के वी वी सी एल अर्बन
-  - एम पी मध्या क्षेत्रा विद्यूत वितरन अर्बन
-  M.P. Madhya Kshetra Vidyut Vitaran - RURAL:
-  - एम पी मध्या क्षेत्रा विद्यूत वितरन रुरल
-  - एम पी एम के वी वी सी एल रुरल
-  M.P. Paschim Kshetra Vidyut Vitaran:
-  - एम पी पशिम क्षेत्रा विद्यूत वितरन
-  - एम पी पी के वी वी सी एल
-  M.P. Poorv Kshetra Vidyut Vitaran:
-  - एम पी पुर्व क्षेत्रा विद्यूत वितरन
-  - एम पी पी के वी वी सी एल अर्बन
-  M.P. Poorv Kshetra Vidyut Vitaran - RURAL:
-  - एम पी पुर्व क्षेत्रा विद्यूत वितरन रुरल
-  - एम पी पी के वी वी सी एल रुरल
-  Madhya Gujarat Vij Company Limited (MGVCL):
-  - मध्या गुजरत वीज कम्पनी लिमिटेड
-  - एम जी वी सी एल
-  Maharashtra State Electricity Distbn Co Ltd:
-  - महाराष्ट्रा स्टेटे एलेक्ट्रिसिटी डिस्ट्रिब्यूशन को लिमिटेड
-  - एम एस ई डी सी एल
-  Mangalore Electricity Supply Co. Ltd (MESCOM):
-  - मंगलूर एलेक्ट्रिसिटी सपलाई को लिमिटेड
-  - मैस्कॉम
-  - एम ई एस सी ओ एम
-  Meghalaya Power Dist Corp Ltd:
-  - मेघालया पॉवर डिस्ट्रिब्यूशन कॉरपोरेशन लिमिटेड
-  - एम ई पी डी सी एल
-  NESCO Odisha:
-  - एन ई एस सी ओ
-  - नेसको
-  NPCL NOIDA POWER:
-  - एन पी सी एल नोईडा पॉवर
-  - एन पी सी एल
-  New Delhi Municipal Council (NDMC) - Electricity:
-  - एन डी एम सी एलेक्ट्रिसिटी
-  - नेव देल्ही म्यूनिसिपल कौंसिल एलेक्ट्रिसिटी
-  North Bihar Power Distribution Company Ltd.:
-  - नार्थ बिहर पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
-  - एन बी पी डी सी एल
-  Paschim Gujarat Vij Company Limited (PGVCL):
-  - पशिम गुजरत वीज कम्पनी लिमिटेड
-  - पी जी वी सी एल
-  Power & Electricity Department - Mizoram:
-  - पॉवर एंड एलेक्ट्रिसिटी डीपार्टमेंट मिजोराम
-  - पी ई डी एम
-  Punjab State Power Corporation Ltd (PSPCL):
-  - पुंजाब स्टेटे पॉवर कॉरपोरेशन लिमिटेड
-  - पी एस पी सी एल
-  SNDL Nagpur:
-  - एस एन डी एल नगपुर
-  - एस एन डी एल
-  Sikkim Power - RURAL:
-  - सिक्कीम पॉवर रुरल
-  - एस के एम पी डबल्यू आर रुरल
-  Sikkim Power - URBAN:
-  - सिक्कीम पॉवर अर्बन
-  - एस के एम पी डबल्यू आर अर्बन
-  South Bihar Power Distribution Company Ltd.:
-  - साऊथ बिहर पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
-  - एस बी पी डी सी एल
-  TP Ajmer Distribution Ltd (TPADL):
-  - टी पी अजमीर डिस्ट्रिब्यूशन लिमिटेड
-  - टी पी ए डी एल
-  - टी पाडल
-  TP Central Odisha Distribution Ltd.:
-  - टी पी सेन्ट्रल ओडीशा डिस्ट्रिब्यूशन लिमिटेड
-  - सेन्ट्रल ओडीशा डिस्ट्रिब्यूशन लिमिटेड
-  - सी ई एस यू
-  TP Renewables Microgrid Ltd.:
-  - टी पी रीन्यूएबल्स माईक्रोग्रिड लिमिटेड
-  - टी पी आर एम जी
-  TP Southern Odisha Distribution Limited:
-  - टी पी साउदर्न ओडीशा डिस्ट्रिब्यूशन लिमिटेड
-  - साऊथ को
-  - एस ओ यू टी एच सी ओ
-  TP Western Odisha Distribution Limited:
-  - टी पी वैस्टर्न ओडीशा डिस्ट्रिब्यूशन लिमिटेड
-  - विस्को
-  - डबल्यू ई एस सी ओ
-  Tamil Nadu Electricity Board (TNEB):
-  - तामिल नाडू एलेक्ट्रिसिटी बॉर्ड
-  - टी नैब
-  - टी एन ई बी
-  Tata Power - Delhi:
-  - ताता पॉवर देल्ही
-  - टी ए टी ए पी डबल्यू आर डी ई एल
-  Tata Power - Mumbai:
-  - ताता पॉवर मुम्बई
-  - टी ए टी ए पी डबल्यू आर एम यू एम
-  Thrissur Corporation Electricity Department:
-  - थ्रिसुर कॉरपोरेशन एलेक्ट्रिसिटी डीपार्टमेंट
-  - टी सेड
-  - टी सी ई डी
-  Torrent Power:
-  - टॉरेंट पॉवर
-  - टोर पॉवर
-  - टी ओ आर पी डबल्यू आर
-  Torrent Power - Agra:
-  - टॉरेंट पॉवर अग्रा
-  - टी ओ आर पी डबल्यू आर ए जी आर
-  Torrent Power - Ahmedabad:
-  - टॉरेंट पॉवर अहमेदाबाद
-  - टी ओ आर पी डबल्यू आर ए एच एम
-  - टोर पॉवर अहमेदाबाद
-  Torrent Power - Bhiwandi:
-  - टॉरेंट पॉवर भिवांडी
-  - टी ओ आर पी डबल्यू आर बी एच आई
-  - टोर पॉवर भिवांडी
-  Torrent Power - Surat:
-  - टॉरेंट पॉवर सुरत
-  - टी ओ आर पी डबल्यू आर एस यू आर
-  - टोर पॉवर सुरत
-  Tripura Electricity Corp Ltd:
-  - त्रिपुर एलेक्ट्रिसिटी कोर्प लिमिटेड
-  - टी सीईसीएल
-  - टी एस ई सी एल
-  Uttar Gujarat Vij Company Limited (UGVCL):
-  - उत्तार गुजरत वीज कम्पनी लिमिटेड
-  - यू जी वी सी एल
-  Uttar Haryana Bijli Vitran Nigam (UHBVN):
-  - उत्तार हरयाणा बीजली वित्रण निगाम
-  - यू एच बी वी एन
-  Uttar Pradesh Power Corp Ltd (UPPCL) - RURAL:
-  - उत्तार प्रादेश पॉवर कोर्प लिमिटेड रुरल
-  - यू पी पी सी एल रुरल
-  Uttar Pradesh Power Corp Ltd (UPPCL) - URBAN:
-  - उत्तार प्रादेश पॉवर कोर्प लिमिटेड अर्बन
-  - यू पी पी सी एल अर्बन
-  Uttarakhand Power Corporation Limited:
-  - उत्तराखण्ड पॉवर कॉरपोरेशन लिमिटेड
-  - यू पी सी एल
-  West Bengal Electricity:
-  - वैस्ट बेंगल एलेक्ट्रिसिटी
-  - डबल्यू बी एस ई डी सी एल ओ बी
-  - डब्लूबीएसईडी क्लॉब
-  West Bengal State Electricity Distribution Co. Ltd (WBSEDCL):
-  - वैस्ट बेंगल स्टेटे एलेक्ट्रिसिटी डिस्ट्रिब्यूशन को लिमिटेड
-  - डबल्यू बी एस ई डी सी एल
-lpg_gas_provider_name:
-  Bharat Petroleum Corporation Ltd.:
-  - भारत पेट्रोलीयम कॉरपोरेशन लिमिटिड
-  - बी पी सी एल
-  - भारत गैस
-  - भारत पेट्रोलीयम
-  Hindustan Petroleum Corporation Ltd.:
-  - हिन्दुस्तान पेट्रोलीयम कॉरपोरेशन लिमिटिड
-  - एच पी गैस
-  - एच पी
-  - हिन्दुस्तान पेट्रोलीयम
-  - एच पी सी एल
-  Indian Oil Corporation Ltd:
-  - इन्डियन ओइल कॉरपोरेशन लिमिटिड
-  - इंडेन गैस
-  - इंडेन
-  Jyothi Gas Pvt. Ltd:
-  - ज्योथी गैस प्राईवेट लिमिटिड
-  - ज्योथी गैस
-  - ज्योती गैस
-pipe_gas_provider_name:
-  Aavantika Gas Ltd.:
-  - आवन्तिका गैस लिमिटेड
-  Adani Total Gas Limited:
-  - अडानी टोटाल गैस लिमिटेड
-  - अडानी गैस
-  - अडानी टोटाल
-  Assam Gas Company Limited:
-  - असाम गैस कम्पनी लिमिटेड
-  Bhagyanagar Gas Limited:
-  - भाग्यानगर गैस लिमिटेड
-  Central U.P. Gas Limited:
-  - सेन्ट्रल यू पी गैस लिमिटेड
-  Charotar Gas Sahakari Mandali Ltd:
-  - चारोतार गैस सहाकारी मंडाली लिमिटेड
-  GAIL Gas Limited:
-  - गैल गैस लिमिटेड
-  - गैल
-  GAIL India Limited:
-  - गैल इंदिया लिमिटेड
-  - गैल इंदिया
-  Green Gas Limited(GGL):
-  - ग्रिन गैस लिमिटेड
-  - ग्रिन गैस
-  - जी जी एल
-  Gujarat Gas Limited:
-  - गुजरत गैस लिमिटेड
-  Gujarat State Petronet Limited:
-  - गुजरत स्टेटे पैट्रोनेट लिमिटेड
-  Haryana City Gas - Kapil Chopra Enterprise:
-  - हरयाणा सीटी गैस कापिल चोपड़ा एंटरप्राइज़
-  - हरयाणा सीटी गैस
-  - कापिल चोपड़ा एंटरप्राइज़
-  IRM Energy Private Limited:
-  - आई आर एम इनर्जी प्राईवेट लिमिटेड
-  Indian Oil Corporation Ltd-Piped Gas:
-  - इन्डियन आयल कॉरपोरेशन लिमिटेड पाईप्ड गैस
-  - आइओसीएल
-  - इन्डियन आयल
-  Indian Oil-Adani Gas Private Limited:
-  - इन्डियन आयल अडानी गैस प्राईवेट लिमिटेड
-  Indraprastha Gas:
-  - इन्द्रप्रस्थ गैस
-  - आई जी एल
-  - इन्द्रप्रस्थ गैस
-  Mahanagar Gas Limited:
-  - माहानगर गैस लिमिटेड
-  - माहानगर गैस
-  Maharashtra Natural Gas Limited (MNGL):
-  - महाराष्ट्रा नैचुरल गैस लिमिटेड
-  - एम एन जी एल
-  - महाराष्ट्रा गैस लिमिटेड
-  Megha Gas:
-  - मेघ गैस
-  Naveriya Gas Pvt Ltd:
-  - नावेरिया गैस प्राईवेट लिमिटेड
-  Purba Bharati Gas Pvt Ltd:
-  - पूर्बा भरती गैस प्राईवेट लिमिटेड
-  Rajasthan State Gas Limited:
-  - राजास्थान स्टेटे गैस लिमिटेड
-  Sabarmati Gas Limited (SGL):
-  - सबरमती गैस लिमिटेड
-  - एस जी एल
-  Torrent Gas:
-  - टॉरेंट गैस
-  Tripura Natural Gas:
-  - त्रिपुर नैचुरल गैस
-  Unique Central Piped Gases Pvt Ltd (UCPGPL):
-  - यूनीक सेन्ट्रल पाईप्ड गेसेस प्राईवेट लिमिटेड
-  - यू सी पी जी पी एल
-  Vadodara Gas Limited:
-  - वड़ोदरा गैस लिमिटेड
-state_name:
-  Andaman and Nicobar:
-  - अन्दमान एन्ड नीकोबार
-  - अन्दमान नीकोबार
-  - अन्दमान
-  Andhra Pradesh:
-  - आंध्रा प्रदेश
-  - ए पी
-  - आंध्रा
-  Arunachal Pradesh:
-  - अरूणाचल प्रदेश
-  - अरूणाचल
-  Assam:
-  - असाम
-  Bihar:
-  - बिहार
-  Chandigarh:
-  - चंदीगढ़
-  Dadra and Nagar Haveli:
-  - ददरा नागर हावेली
-  - ददरा एन्ड नागर हावेली
-  Daman and Diu:
-  - दामन एन्ड दियू
-  Delhi:
-  - देल्ही
-  Goa:
-  - गोआ
-  Gujarat:
-  - गुजरात
-  Haryana:
-  - हरयाणा
-  Himachal Pradesh:
-  - हिमाचल प्रदेश
-  - हिमाचल
-  Jammu and Kashmir:
-  - जम्मु एन्ड काश्मीर
-  - जे एन्ड के
-  - जम्मु काश्मीर
-  Karnataka:
-  - कर्णाटका
-  Kerala:
-  - केरला
-  Lakshadweep:
-  - लक्ष्द्वीप
-  Madhya Pradesh:
-  - मध्या प्रदेश
-  - एम पी
-  Maharashtra:
-  - महाराष्ट्रा
-  Manipur:
-  - मणीपुर
-  Meghalaya:
-  - मेघालया
-  Mizoram:
-  - मिजोराम
-  Nagaland:
-  - नगालैंड
-  Odisha:
-  - ओरीसा
-  - ओडीशा
-  Puducherry:
-  - पुदुचेरी
-  - पोंडीचेरी
-  Punjab:
-  - पंजाब
-  Rajasthan:
-  - राजास्थान
-  Sikkim:
-  - सिक्कीम
-  Tamil Nadu:
-  - तामिल नाडू
-  - टी एन
-  Telangana:
-  - तेलंगना
-  Tripura:
-  - त्रिपुरा
-  Uttar Pradesh:
-  - उत्तार प्रदेश
-  - यू पी
-  West Bengal:
-  - वैस्ट बेंगाल
-  - डबल्यू बी
-  - बेंगाल
-  - पशिम बेंगाल
+# electricity_board:
+#   APEPDCL-Eastern Power Distribution CO AP Ltd:
+#   - इस्टर्न पॉवर डिस्ट्रिब्यूशन सी ओ ए पी लिमिटेड
+#   - ए पी ई पी डी सी एल
+#   - इस्टर्न पॉवर डिस्ट्रिब्यूशन को आप लिमिटेड
+#   APSPDCL-Southern Power Distribution CO AP Ltd:
+#   - साउदर्न पॉवर डिस्ट्रिब्यूशन सी ओ ए पी लिमिटेड
+#   - ए पी एस पी डी सी एल
+#   - साउदर्न पॉवर डिस्ट्रिब्यूशन को आप लिमिटेड
+#   Adani Electricity Mumbai Limited:
+#   - अडानी एलेक्ट्रिसिटी मुम्बई लिमिटेड
+#   - अडानी
+#   Ajmer Vidyut Vitran Nigam Limited (AVVNL):
+#   - अजमीर विद्यूत वित्रण निगाम लिमिटेड
+#   - ए वी वी एन एल
+#   Assam Power Distribution Company Ltd:
+#   - असाम पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
+#   - ए पी डी सी एल
+#   B.E.S.T Mumbai:
+#   - बी ई एस टी मुम्बई
+#   - बेस्त
+#   - बी ई एस टी
+#   BSES Rajdhani Power Limited:
+#   - बी एस ई एस राजधनी पॉवर लिमिटेड
+#   - बी एस ई एस
+#   - राजधनी पॉवर लिमिटेड
+#   BSES Yamuna Power Limited:
+#   - बी एस ई एस यामुना पॉवर लिमिटेड
+#   - यामुना पॉवर लिमिटेड
+#   Bangalore Electricity Supply Co. Ltd (BESCOM):
+#   - बैंगलूर एलेक्ट्रिसिटी सपलाई को लिमिटेड
+#   - बेस्कॉम
+#   - बी ई एस सी ओ एम
+#   Bharatpur Electricity Services Ltd. (BESL):
+#   - भारतपुर एलेक्ट्रिसिटी सर्विसेज लिमिटेड
+#   - बी ई एस एल
+#   Bikaner Electricity Supply Limited (BkESL):
+#   - बिकानेर एलेक्ट्रिसिटी सपलाई लिमिटेड
+#   - बी के ई एस एल
+#   Calcutta Electric Supply Corporation (CESC):
+#   - कैलकटा इलैक्ट्रिक सपलाई कॉरपोरेशन
+#   - सी ई एस सी
+#   Chamundeshwari Electricity Supply Corp Ltd (CESCOM):
+#   - चामुण्डेश्वरी एलेक्ट्रिसिटी सपलाई कोर्प लिमिटेड
+#   - सेसकॉम
+#   - सी ई एस सी ओ एम
+#   Chattisgarh State Power Distribution Co. Ltd (CSPDCL):
+#   - छत्तिसगढ़ स्टेटे पॉवर डिस्ट्रिब्यूशन को लिमिटेड
+#   - सी एस पी डी सी एल
+#   DNH Power Distribution Company Limited:
+#   - डी एन एच पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
+#   - डी एन एच
+#   - डी एन एच पी डी सी एल
+#   Dakshin Gujarat Vij Company Limited (DGVCL):
+#   - दक्षिन गुजरत वीज कम्पनी लिमिटेड
+#   - डी जी वी सी एल
+#   Dakshin Haryana Bijli Vitran Nigam (DHBVN):
+#   - दक्षिन हरयाणा बीजली वित्रण निगाम
+#   - डी एच बी वी एन
+#   Daman and Diu Electricity:
+#   - दामन एंड दियू एलेक्ट्रिसिटी
+#   - डी डी ई डी
+#   Department of Power Government of Arunachal Pradesh:
+#   - अरूणाचल पॉवर
+#   - डीपार्टमेंट ओफ पॉवर गवर्नमेन्ट ओफ अरूणाचल प्रादेश
+#   Department of Power Nagaland:
+#   - डीपार्टमेंट ओफ पॉवर नगालैंड
+#   - डी ओ पी एन
+#   Electricity Department Chandigarh:
+#   - एलेक्ट्रिसिटी डीपार्टमेंट चंदीगढ़
+#   - सी एच डी
+#   Gift Power Company Limited:
+#   - गिफ़्ट पॉवर कम्पनी लिमिटेड
+#   Goa Electricity Department:
+#   - जीओए एलेक्ट्रिसिटी डीपार्टमेंट
+#   - जी ई डी
+#   Government of Puducherry Electricity Department:
+#   - गवर्नमेन्ट ओफ पुदुचेरी एलेक्ट्रिसिटी डीपार्टमेंट
+#   - पी वाइ ई बी
+#   Gulbarga Electricity Supply Company Limited:
+#   - गुलबर्ग एलेक्ट्रिसिटी सपलाई कम्पनी लिमिटेड
+#   - जी ई एस सी ओ एम
+#   - जेस्कॉम
+#   Himachal Pradesh State Electricity Board:
+#   - हिमांचल प्रादेश स्टेटे एलेक्ट्रिसिटी बॉर्ड
+#   - एच पी एस ई बी
+#   Hubli Electricity Supply Company Ltd (HESCOM):
+#   - हुब्ली एलेक्ट्रिसिटी सपलाई कम्पनी लिमिटेड
+#   - हेसकॉम
+#   - एच ई एस सी ओ एम
+#   Jaipur Vidyut Vitran Nigam (JVVNL):
+#   - जैपुर विद्यूत वित्रण निगाम
+#   - जे वी वी एन एल
+#   Jammu and Kashmir Power Development Department:
+#   - जम्मु एंड काश्मीर पॉवर डेवेलपमेंट डीपार्टमेंट
+#   - जे के पी डी डी
+#   Jamshedpur Utilities:
+#   - जामशेदपुर यूटीलिटीज
+#   - जूस्को
+#   - जे यू एस सी ओ
+#   Jharkhand Bijli Vitran Nigam Limited (JBVNL):
+#   - झारखण्ड बीजली वित्रण निगाम लिमिटेड
+#   - जे बी वी एन एल
+#   Jodhpur Vidyut Vitran Nigam Limited (JDVVNL):
+#   - जोधापुर विद्यूत वित्रण निगाम लिमिटेड
+#   - जे डी वी वी एन एल
+#   Kannan Devan Hills Plantations Company Private Limited:
+#   - कानन देवान हील्स प्लांटेशनों कम्पनी प्राईवेट लिमिटेड
+#   - के डी एच पी सी पी एल
+#   Kanpur Electricity Supply Company:
+#   - कनपुर एलेक्ट्रिसिटी सपलाई कम्पनी
+#   - केसको
+#   - के ई एस सी ओ
+#   Kerala State Electricity Board Ltd. (KSEBL):
+#   - केरला स्टेटे एलेक्ट्रिसिटी बॉर्ड लिमिटेड
+#   - के एस ई बी एल
+#   Kota Electricity Distribution Limited:
+#   - कोता एलेक्ट्रिसिटी डिस्ट्रिब्यूशन लिमिटेड
+#   - के ई डी एल
+#   Lakshadweep Electricity Department:
+#   - लक्ष्द्वीप एलेक्ट्रिसिटी डीपार्टमेंट
+#   M.P. Madhya Kshetra Vidyut Vitaran:
+#   - एम पी मध्या क्षेत्रा विद्यूत वितरन
+#   - एम पी एम के वी वी सी एल अर्बन
+#   - एम पी मध्या क्षेत्रा विद्यूत वितरन अर्बन
+#   M.P. Madhya Kshetra Vidyut Vitaran - RURAL:
+#   - एम पी मध्या क्षेत्रा विद्यूत वितरन रुरल
+#   - एम पी एम के वी वी सी एल रुरल
+#   M.P. Paschim Kshetra Vidyut Vitaran:
+#   - एम पी पशिम क्षेत्रा विद्यूत वितरन
+#   - एम पी पी के वी वी सी एल
+#   M.P. Poorv Kshetra Vidyut Vitaran:
+#   - एम पी पुर्व क्षेत्रा विद्यूत वितरन
+#   - एम पी पी के वी वी सी एल अर्बन
+#   M.P. Poorv Kshetra Vidyut Vitaran - RURAL:
+#   - एम पी पुर्व क्षेत्रा विद्यूत वितरन रुरल
+#   - एम पी पी के वी वी सी एल रुरल
+#   Madhya Gujarat Vij Company Limited (MGVCL):
+#   - मध्या गुजरत वीज कम्पनी लिमिटेड
+#   - एम जी वी सी एल
+#   Maharashtra State Electricity Distbn Co Ltd:
+#   - महाराष्ट्रा स्टेटे एलेक्ट्रिसिटी डिस्ट्रिब्यूशन को लिमिटेड
+#   - एम एस ई डी सी एल
+#   Mangalore Electricity Supply Co. Ltd (MESCOM):
+#   - मंगलूर एलेक्ट्रिसिटी सपलाई को लिमिटेड
+#   - मैस्कॉम
+#   - एम ई एस सी ओ एम
+#   Meghalaya Power Dist Corp Ltd:
+#   - मेघालया पॉवर डिस्ट्रिब्यूशन कॉरपोरेशन लिमिटेड
+#   - एम ई पी डी सी एल
+#   NESCO Odisha:
+#   - एन ई एस सी ओ
+#   - नेसको
+#   NPCL NOIDA POWER:
+#   - एन पी सी एल नोईडा पॉवर
+#   - एन पी सी एल
+#   New Delhi Municipal Council (NDMC) - Electricity:
+#   - एन डी एम सी एलेक्ट्रिसिटी
+#   - नेव देल्ही म्यूनिसिपल कौंसिल एलेक्ट्रिसिटी
+#   North Bihar Power Distribution Company Ltd.:
+#   - नार्थ बिहर पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
+#   - एन बी पी डी सी एल
+#   Paschim Gujarat Vij Company Limited (PGVCL):
+#   - पशिम गुजरत वीज कम्पनी लिमिटेड
+#   - पी जी वी सी एल
+#   Power & Electricity Department - Mizoram:
+#   - पॉवर एंड एलेक्ट्रिसिटी डीपार्टमेंट मिजोराम
+#   - पी ई डी एम
+#   Punjab State Power Corporation Ltd (PSPCL):
+#   - पुंजाब स्टेटे पॉवर कॉरपोरेशन लिमिटेड
+#   - पी एस पी सी एल
+#   SNDL Nagpur:
+#   - एस एन डी एल नगपुर
+#   - एस एन डी एल
+#   Sikkim Power - RURAL:
+#   - सिक्कीम पॉवर रुरल
+#   - एस के एम पी डबल्यू आर रुरल
+#   Sikkim Power - URBAN:
+#   - सिक्कीम पॉवर अर्बन
+#   - एस के एम पी डबल्यू आर अर्बन
+#   South Bihar Power Distribution Company Ltd.:
+#   - साऊथ बिहर पॉवर डिस्ट्रिब्यूशन कम्पनी लिमिटेड
+#   - एस बी पी डी सी एल
+#   TP Ajmer Distribution Ltd (TPADL):
+#   - टी पी अजमीर डिस्ट्रिब्यूशन लिमिटेड
+#   - टी पी ए डी एल
+#   - टी पाडल
+#   TP Central Odisha Distribution Ltd.:
+#   - टी पी सेन्ट्रल ओडीशा डिस्ट्रिब्यूशन लिमिटेड
+#   - सेन्ट्रल ओडीशा डिस्ट्रिब्यूशन लिमिटेड
+#   - सी ई एस यू
+#   TP Renewables Microgrid Ltd.:
+#   - टी पी रीन्यूएबल्स माईक्रोग्रिड लिमिटेड
+#   - टी पी आर एम जी
+#   TP Southern Odisha Distribution Limited:
+#   - टी पी साउदर्न ओडीशा डिस्ट्रिब्यूशन लिमिटेड
+#   - साऊथ को
+#   - एस ओ यू टी एच सी ओ
+#   TP Western Odisha Distribution Limited:
+#   - टी पी वैस्टर्न ओडीशा डिस्ट्रिब्यूशन लिमिटेड
+#   - विस्को
+#   - डबल्यू ई एस सी ओ
+#   Tamil Nadu Electricity Board (TNEB):
+#   - तामिल नाडू एलेक्ट्रिसिटी बॉर्ड
+#   - टी नैब
+#   - टी एन ई बी
+#   Tata Power - Delhi:
+#   - ताता पॉवर देल्ही
+#   - टी ए टी ए पी डबल्यू आर डी ई एल
+#   Tata Power - Mumbai:
+#   - ताता पॉवर मुम्बई
+#   - टी ए टी ए पी डबल्यू आर एम यू एम
+#   Thrissur Corporation Electricity Department:
+#   - थ्रिसुर कॉरपोरेशन एलेक्ट्रिसिटी डीपार्टमेंट
+#   - टी सेड
+#   - टी सी ई डी
+#   Torrent Power:
+#   - टॉरेंट पॉवर
+#   - टोर पॉवर
+#   - टी ओ आर पी डबल्यू आर
+#   Torrent Power - Agra:
+#   - टॉरेंट पॉवर अग्रा
+#   - टी ओ आर पी डबल्यू आर ए जी आर
+#   Torrent Power - Ahmedabad:
+#   - टॉरेंट पॉवर अहमेदाबाद
+#   - टी ओ आर पी डबल्यू आर ए एच एम
+#   - टोर पॉवर अहमेदाबाद
+#   Torrent Power - Bhiwandi:
+#   - टॉरेंट पॉवर भिवांडी
+#   - टी ओ आर पी डबल्यू आर बी एच आई
+#   - टोर पॉवर भिवांडी
+#   Torrent Power - Surat:
+#   - टॉरेंट पॉवर सुरत
+#   - टी ओ आर पी डबल्यू आर एस यू आर
+#   - टोर पॉवर सुरत
+#   Tripura Electricity Corp Ltd:
+#   - त्रिपुर एलेक्ट्रिसिटी कोर्प लिमिटेड
+#   - टी सीईसीएल
+#   - टी एस ई सी एल
+#   Uttar Gujarat Vij Company Limited (UGVCL):
+#   - उत्तार गुजरत वीज कम्पनी लिमिटेड
+#   - यू जी वी सी एल
+#   Uttar Haryana Bijli Vitran Nigam (UHBVN):
+#   - उत्तार हरयाणा बीजली वित्रण निगाम
+#   - यू एच बी वी एन
+#   Uttar Pradesh Power Corp Ltd (UPPCL) - RURAL:
+#   - उत्तार प्रादेश पॉवर कोर्प लिमिटेड रुरल
+#   - यू पी पी सी एल रुरल
+#   Uttar Pradesh Power Corp Ltd (UPPCL) - URBAN:
+#   - उत्तार प्रादेश पॉवर कोर्प लिमिटेड अर्बन
+#   - यू पी पी सी एल अर्बन
+#   Uttarakhand Power Corporation Limited:
+#   - उत्तराखण्ड पॉवर कॉरपोरेशन लिमिटेड
+#   - यू पी सी एल
+#   West Bengal Electricity:
+#   - वैस्ट बेंगल एलेक्ट्रिसिटी
+#   - डबल्यू बी एस ई डी सी एल ओ बी
+#   - डब्लूबीएसईडी क्लॉब
+#   West Bengal State Electricity Distribution Co. Ltd (WBSEDCL):
+#   - वैस्ट बेंगल स्टेटे एलेक्ट्रिसिटी डिस्ट्रिब्यूशन को लिमिटेड
+#   - डबल्यू बी एस ई डी सी एल
+# lpg_gas_provider_name:
+#   Bharat Petroleum Corporation Ltd.:
+#   - भारत पेट्रोलीयम कॉरपोरेशन लिमिटिड
+#   - बी पी सी एल
+#   - भारत गैस
+#   - भारत पेट्रोलीयम
+#   Hindustan Petroleum Corporation Ltd.:
+#   - हिन्दुस्तान पेट्रोलीयम कॉरपोरेशन लिमिटिड
+#   - एच पी गैस
+#   - एच पी
+#   - हिन्दुस्तान पेट्रोलीयम
+#   - एच पी सी एल
+#   Indian Oil Corporation Ltd:
+#   - इन्डियन ओइल कॉरपोरेशन लिमिटिड
+#   - इंडेन गैस
+#   - इंडेन
+#   Jyothi Gas Pvt. Ltd:
+#   - ज्योथी गैस प्राईवेट लिमिटिड
+#   - ज्योथी गैस
+#   - ज्योती गैस
+# pipe_gas_provider_name:
+#   Aavantika Gas Ltd.:
+#   - आवन्तिका गैस लिमिटेड
+#   Adani Total Gas Limited:
+#   - अडानी टोटाल गैस लिमिटेड
+#   - अडानी गैस
+#   - अडानी टोटाल
+#   Assam Gas Company Limited:
+#   - असाम गैस कम्पनी लिमिटेड
+#   Bhagyanagar Gas Limited:
+#   - भाग्यानगर गैस लिमिटेड
+#   Central U.P. Gas Limited:
+#   - सेन्ट्रल यू पी गैस लिमिटेड
+#   Charotar Gas Sahakari Mandali Ltd:
+#   - चारोतार गैस सहाकारी मंडाली लिमिटेड
+#   GAIL Gas Limited:
+#   - गैल गैस लिमिटेड
+#   - गैल
+#   GAIL India Limited:
+#   - गैल इंदिया लिमिटेड
+#   - गैल इंदिया
+#   Green Gas Limited(GGL):
+#   - ग्रिन गैस लिमिटेड
+#   - ग्रिन गैस
+#   - जी जी एल
+#   Gujarat Gas Limited:
+#   - गुजरत गैस लिमिटेड
+#   Gujarat State Petronet Limited:
+#   - गुजरत स्टेटे पैट्रोनेट लिमिटेड
+#   Haryana City Gas - Kapil Chopra Enterprise:
+#   - हरयाणा सीटी गैस कापिल चोपड़ा एंटरप्राइज़
+#   - हरयाणा सीटी गैस
+#   - कापिल चोपड़ा एंटरप्राइज़
+#   IRM Energy Private Limited:
+#   - आई आर एम इनर्जी प्राईवेट लिमिटेड
+#   Indian Oil Corporation Ltd-Piped Gas:
+#   - इन्डियन आयल कॉरपोरेशन लिमिटेड पाईप्ड गैस
+#   - आइओसीएल
+#   - इन्डियन आयल
+#   Indian Oil-Adani Gas Private Limited:
+#   - इन्डियन आयल अडानी गैस प्राईवेट लिमिटेड
+#   Indraprastha Gas:
+#   - इन्द्रप्रस्थ गैस
+#   - आई जी एल
+#   - इन्द्रप्रस्थ गैस
+#   Mahanagar Gas Limited:
+#   - माहानगर गैस लिमिटेड
+#   - माहानगर गैस
+#   Maharashtra Natural Gas Limited (MNGL):
+#   - महाराष्ट्रा नैचुरल गैस लिमिटेड
+#   - एम एन जी एल
+#   - महाराष्ट्रा गैस लिमिटेड
+#   Megha Gas:
+#   - मेघ गैस
+#   Naveriya Gas Pvt Ltd:
+#   - नावेरिया गैस प्राईवेट लिमिटेड
+#   Purba Bharati Gas Pvt Ltd:
+#   - पूर्बा भरती गैस प्राईवेट लिमिटेड
+#   Rajasthan State Gas Limited:
+#   - राजास्थान स्टेटे गैस लिमिटेड
+#   Sabarmati Gas Limited (SGL):
+#   - सबरमती गैस लिमिटेड
+#   - एस जी एल
+#   Torrent Gas:
+#   - टॉरेंट गैस
+#   Tripura Natural Gas:
+#   - त्रिपुर नैचुरल गैस
+#   Unique Central Piped Gases Pvt Ltd (UCPGPL):
+#   - यूनीक सेन्ट्रल पाईप्ड गेसेस प्राईवेट लिमिटेड
+#   - यू सी पी जी पी एल
+#   Vadodara Gas Limited:
+#   - वड़ोदरा गैस लिमिटेड
+# state_name:
+#   Andaman and Nicobar:
+#   - अन्दमान एन्ड नीकोबार
+#   - अन्दमान नीकोबार
+#   - अन्दमान
+#   Andhra Pradesh:
+#   - आंध्रा प्रदेश
+#   - ए पी
+#   - आंध्रा
+#   Arunachal Pradesh:
+#   - अरूणाचल प्रदेश
+#   - अरूणाचल
+#   Assam:
+#   - असाम
+#   Bihar:
+#   - बिहार
+#   Chandigarh:
+#   - चंदीगढ़
+#   Dadra and Nagar Haveli:
+#   - ददरा नागर हावेली
+#   - ददरा एन्ड नागर हावेली
+#   Daman and Diu:
+#   - दामन एन्ड दियू
+#   Delhi:
+#   - देल्ही
+#   Goa:
+#   - गोआ
+#   Gujarat:
+#   - गुजरात
+#   Haryana:
+#   - हरयाणा
+#   Himachal Pradesh:
+#   - हिमाचल प्रदेश
+#   - हिमाचल
+#   Jammu and Kashmir:
+#   - जम्मु एन्ड काश्मीर
+#   - जे एन्ड के
+#   - जम्मु काश्मीर
+#   Karnataka:
+#   - कर्णाटका
+#   Kerala:
+#   - केरला
+#   Lakshadweep:
+#   - लक्ष्द्वीप
+#   Madhya Pradesh:
+#   - मध्या प्रदेश
+#   - एम पी
+#   Maharashtra:
+#   - महाराष्ट्रा
+#   Manipur:
+#   - मणीपुर
+#   Meghalaya:
+#   - मेघालया
+#   Mizoram:
+#   - मिजोराम
+#   Nagaland:
+#   - नगालैंड
+#   Odisha:
+#   - ओरीसा
+#   - ओडीशा
+#   Puducherry:
+#   - पुदुचेरी
+#   - पोंडीचेरी
+#   Punjab:
+#   - पंजाब
+#   Rajasthan:
+#   - राजास्थान
+#   Sikkim:
+#   - सिक्कीम
+#   Tamil Nadu:
+#   - तामिल नाडू
+#   - टी एन
+#   Telangana:
+#   - तेलंगना
+#   Tripura:
+#   - त्रिपुरा
+#   Uttar Pradesh:
+#   - उत्तार प्रदेश
+#   - यू पी
+#   West Bengal:
+#   - वैस्ट बेंगाल
+#   - डबल्यू बी
+#   - बेंगाल
+#   - पशिम बेंगाल
