@@ -6,6 +6,8 @@ import pandas as pd
 DB_READ_PATH = "db/logger.tsv"
 URL_BASE = "https://classlm.blob.core.windows.net/backend-logs/{}.wav"
 
+supported_lang = ["en", "hi", "ta", "or"]
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--start-date", required=True)
 parser.add_argument("--end-date", required=True)
@@ -43,17 +45,10 @@ db_df = db_df[db_df["date"].apply(lambda x: start_date <= x <= end_date)]
 db_df = db_df.dropna()
 db_df = db_df.drop_duplicates(subset=["lang", "transcript"])
 
-db_df_en = db_df[db_df["lang"] == "English"]
-db_df_hi = db_df[db_df["lang"] == "Hindi"]
-
-data_en = convert_to_data_format(db_df_en)
-data_hi = convert_to_data_format(db_df_hi)
-
-data_en.to_csv(
-    f"data-tagging/data/data-to-upload/{args.start_date}-to-{args.end_date}-en.csv",
-    index=False,
-)
-data_hi.to_csv(
-    f"data-tagging/data/data-to-upload/{args.start_date}-to-{args.end_date}-hi.csv",
-    index=False,
-)
+for lang in supported_lang:
+    df_lang = db_df[db_df["lang"] == lang]
+    df_lang = convert_to_data_format(df_lang)
+    df_lang.to_csv(
+        f"data-tagging/data/data-to-upload/{args.start_date}-to-{args.end_date}-{lang}.csv",
+        index=False,
+    )
