@@ -2,7 +2,7 @@ supported_languages:
   - en
   - hi
   - ta
-  - or
+  # - or
 
 asr:
   en:
