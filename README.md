@@ -16,7 +16,7 @@ conda env create -n dev-env --file conda-env-setup.yaml
 conda activate dev-env
 ```
 3. Clone the [indic-punct](https://github.com/AI4Bharat/indic-punct) library (outside the transactional voice ai folder).
-Follow the [installation instructions](https://github.com/AI4Bharat/indic-punct#installation-instructions) to setup indic-punct
+Follow the [installation instructions](https://github.com/AI4Bharat/indic-punct#installation-instructions) to setup indic-punct.
 
 ## Structure
 The project contains four modules as shown in the image. 
@@ -24,3 +24,14 @@ The project contains four modules as shown in the image.
 <img src="imgs/structure.jpg" alt="structure" width="500"/>
 <br>
 Note: Deployment utils provided here are not production ready. For deployment, use [transactional-voice-ai_serving](https://github.com/AI4Bharat/transactional-voice-ai_serving).
+
+The individual components are defined in detail in following faces:
+- ASR (+ Hotwords, LM, ITN)
+- [Intent](intent/README.md)
+- [Entity](entity/README.md)
+
+## Pipeline
+The complete pipeline integrating the components is given by the following diagram.
+<br>
+<img src="imgs/final-pipeline.jpg" alt="structure" width="800"/>
+<br>
