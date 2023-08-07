@@ -3,8 +3,8 @@
 <br>
 The entity recognizer is a deterministic pattern recognition system that uses regex patterns to search the ASR transcripts for certain words, phrases or patterns, which correspond to entities. Two kinds of entities:
 
-- <b>Closed Set Entities</b>- Entities those have a finite number of values (e.g. bank name)
-- <b>Open Set Entities</b>- Entities those have infinite values but follow some pattern (e.g. mobile number)
+- <b>Closed Set Entities</b>- Entities that have a finite number of values (e.g. bank name)
+- <b>Open Set Entities</b>- Entities that have infinite values but follow some pattern (e.g. mobile number)
 Note: Current setup doesn't support entities that do not fall under the open or closed definition, e.g. `datetime`.
 
 Every predicted entity is represented as a dictionary with the following key-values:
@@ -18,7 +18,7 @@ end: End index of the entity in the input text
 The final prediction is a list of dictionaries.
 
 ## Closed Set Entities
-These are predicted using a regex based keyword-search. All the variations which correspond to the supported entities need to be defined in the YAML files under `entity/data/variations`. The schema for the YAML is given below:
+These are predicted using a regex-based keyword search. All the variations which correspond to the supported entities need to be defined in the YAML files under `entity/data/variations`. The schema for the YAML is given below:
 ```yaml
 entity_type_1:
     entity_val_1a:
@@ -35,8 +35,8 @@ entity_type_2:
 ```
 
 ## Open Set Entities
-These are predicted using regex pattern based search. All the patterns which correspond to the supported entities need to be defined in `entity/data/patterns.yaml`. The schema for the YAML is given below:
-```json
+These are predicted using a regex pattern-based search. All the patterns which correspond to the supported entities need to be defined in `entity/data/patterns.yaml`. The schema for the YAML is given below:
+```yaml
 entity_type_1:
     - <pattern>
     - <pattern>
@@ -46,9 +46,9 @@ entity_type_2:
 ```
 
 ## Prediction
-`EntityRecognizer` defined in `entity_recognizer.py` takes care of prediction for both types of entities. Additionally it performs some postprocessing on the predicted entities for removing ambiguities and applying standardization.
+`EntityRecognizer` defined in `entity_recognizer.py` takes care of prediction for both types of entities. Additionally, it performs some postprocessing on the predicted entities for removing ambiguities and applying standardization.
 
 ## Adding new entities
-For supporting new entities, add the variations or patterns for open or closed type in the corresponding yaml files.
+For supporting new entities, add the variations or patterns for open or closed type in the corresponding YAML files.
 <br>
-For supporting new languages, add new patterns to open set definitions and create a new language corresponding YAML for closed set variations.
+For supporting new languages, add new patterns to open set definitions and create a new language corresponding YAML file for closed set variations.
