@@ -17,6 +17,7 @@ conda activate dev-env
 ```
 3. Clone the [indic-punct](https://github.com/AI4Bharat/indic-punct) library (outside the transactional voice ai folder).
 Follow the [installation instructions](https://github.com/AI4Bharat/indic-punct#installation-instructions) to setup indic-punct.
+4. Fetch the model and data files using git-lfs command: `git lfs fetch --all`
 
 ## Structure
 The project contains four modules as shown in the image. 
@@ -35,3 +36,5 @@ The complete pipeline integrating the components is given in the following diagr
 <br>
 <img src="imgs/final-pipeline.jpg" alt="structure" width="800"/>
 <br>
+This pipeline is implemented in [pipeline.py](pipeline.py) and also on [transactional-voice-ai_serving](https://github.com/AI4Bharat/transactional-voice-ai_serving).
+
